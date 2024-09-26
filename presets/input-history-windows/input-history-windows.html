@@ -776,7 +776,7 @@
           );
 
         // Display repetition counter if 2 or higher
-        if (_repeatCount > 1) {
+        if (_repeatCount > 1 && innerHTMLOfKeyCombination.length > 0){
           innerHTMLOfKeyCombination +=
             createElementWithClass("span", _repeatCount, ["repeat"]).outerHTML;
         }
